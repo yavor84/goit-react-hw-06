@@ -1,10 +1,8 @@
-// import { FcPhone } from 'react-icons/fc';
-// import { FcBusinessContact } from 'react-icons/fc';
 import css from './Contact.module.css';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contactsSlice';
-import { FaRegUser } from 'react-icons/fa';
-import { MdOutlinePhoneIphone } from 'react-icons/md';
+import { RiContactsFill } from 'react-icons/ri';
+import { BsFillPhoneFill } from 'react-icons/bs';
 
 const Contact = ({ data: { id, name, number } }) => {
   const dispatch = useDispatch();
@@ -16,11 +14,11 @@ const Contact = ({ data: { id, name, number } }) => {
     <>
       <div className={css.info}>
         <div className={css.string}>
-          <FaRegUser size={20} />
+          <RiContactsFill size={20} />
           <h3 className={css.name}>{name}</h3>
         </div>
         <div className={css.string}>
-          <MdOutlinePhoneIphone size={20} />
+          <BsFillPhoneFill size={20} />
           <p className={css.name}>{number}</p>
         </div>
       </div>
