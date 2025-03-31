@@ -1,14 +1,15 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 400px;
-  height: 310px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   gap: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #dedbd2;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .wrap {
@@ -27,36 +28,42 @@
   padding: 10px;
   width: 100%;
   outline: none;
-  border: 2px solid #ccc;
+  border: 2px solid #dedbd2;
   line-height: 1.25;
+  transition: box-shadow 300ms ease-in-out, border-color 300ms ease-in-out;
 }
 
 .input:focus {
-  border-color: #58bc82;
+  border-color: #5a6c6e;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .error {
-  font-size: 13px;
+  font-size: 16px;
+  margin-top: 5px;
   align-self: flex-start;
-  color: orangered;
+  color: #b22767;
 }
 
 .addBtn {
-  padding: 10px 20px;
-  width: 205px;
+  font-weight: 400;
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 200px;
   height: 40px;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
-  background-color: #7b7c81;
-  color: white;
+  background-color: #4a5759;
+  color: #f7e1d7;
   border: none;
-  outline: none;
   transition: all 300ms;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .addBtn:hover,
 .addBtn:focus {
-  background-color: #58bc82;
+  background-color: #5a6c6e;
   outline: #58bc82;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

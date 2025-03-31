@@ -3,10 +3,9 @@
 }
 
 .deleteBtn {
-  padding: 10px 20px;
+  font-size: 14px;
   border-radius: 20px;
-  background-color: #7b7c81;
-  color: white;
+  background-color: #edafb8;
   border: none;
   outline: none;
   transition: all 300ms;
@@ -15,11 +14,30 @@
 
 .deleteBtn:hover,
 .deleteBtn:focus {
-  background-color: #58bc82;
-  outline: #58bc82;
+  background-color: #e9cccf;
+  outline: #edafb8;
 }
 
 .name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.string {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
 }
